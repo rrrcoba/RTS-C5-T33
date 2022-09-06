@@ -1,0 +1,79 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * *  -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * *  -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * *  -->
+<!-- * * * * * * * to get started with your project! * * * * * * *  -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+
+<div class="w-100 d-flex">
+  <div class="container w-25 m-auto">
+    <div class="input-group">
+      <div id="op" class="form-control text-lg-end" type="text">
+        {{op}}
+      </div>
+    </div>
+
+    <div class="input-group">
+      <div id="result" class="form-control text-lg-end" type="text">
+        {{result}}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="btn-group">
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="c()">C</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="ac()">AC</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="del()"><i class="bi bi-backspace"></i></button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="divide()">÷</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="btn-group">
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('7')">7</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('8')">8</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('9')">9</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="product()">x</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="btn-group">
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('4')">4</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('5')">5</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('6')">6</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="minus()">-</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="btn-group">
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('1')">1</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('2')">2</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('3')">3</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="plus()">+</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="btn-group">
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('00')">00</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('0')">0</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-secondary" (click)="number('.')">.</button>
+        <button type="button" class="col-3 btn btn-outline text-white bg-purple" (click)="equal()">=</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * *  -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * *  -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
+
+<router-outlet></router-outlet>
